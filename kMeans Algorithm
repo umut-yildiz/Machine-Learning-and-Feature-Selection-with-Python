@@ -103,4 +103,11 @@ Prediction = [cluster1<cluster2];
 IterationStop = label==Prediction;
 
 end
+
+if mean(cluster1)>mean(cluster2)
+    Prediction = [cluster1>cluster2];
+else
+    Prediction = [cluster1<cluster2];
+end
+
 end
